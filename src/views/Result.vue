@@ -50,7 +50,7 @@ export default {
     albums: []
   }),
   created() {
-    axios.get(`//itunes.apple.com/search?term=${this.$route.params.searchName}&country=jp&entity=song`)
+    axios.get("/api/")
       .then(response => {
         console.log(response);
         this.albums = response.data.results

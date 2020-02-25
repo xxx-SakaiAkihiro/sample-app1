@@ -2,17 +2,21 @@
   "name": "sample-app1",
   "version": "0.1.0",
   "private": true,
+  "description": "## Project setup ``` npm install ```",
+  "author": "",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "main": ".eslintrc.js",
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "cors": "^2.8.5",
     "firebase": "^7.9.1",
     "moment": "^2.24.0",
+    "proxy": "^1.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
     "vuetify": "^2.2.11",
@@ -31,9 +35,6 @@
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.3.0"
   },
-  "description": "## Project setup ``` npm install ```",
-  "main": ".eslintrc.js",
   "keywords": [],
-  "author": "",
   "license": "ISC"
 }

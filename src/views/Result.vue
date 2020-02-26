@@ -17,7 +17,7 @@
                       style="color:white;text-decoration:none;"
                       target="_blank"
                     >
-                      <v-card-title v-text="album.trackName">タイトル</v-card-title>
+                      <v-card-title v-text="album.collectionName">タイトル</v-card-title>
                     </a>
                     <a
                       :href="album.artistViewUrl"
@@ -50,7 +50,7 @@ export default {
     albums: []
   }),
   created() {
-    axios.get("/api/")
+    axios.get(`https://itunes.apple.com/search?term=${this.$route.params.searchName}&country=jp&entity=album`)
       .then(response => {
         console.log(response);
         this.albums = response.data.results

@@ -4,7 +4,7 @@
       <input
         class="text"
         type="text"
-        placeholder="アーティスト名/曲名"
+        placeholder="アーティスト名"
         required
         v-model="searchName"
         @keyup.enter="serch"
